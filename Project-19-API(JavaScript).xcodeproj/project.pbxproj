@@ -6,8 +6,39 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E0EAA9E42CE8E13C0017D570 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EAA9E32CE8E13C0017D570 /* UniformTypeIdentifiers.framework */; };
+		E0EAA9F02CE8E13C0017D570 /* Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E0EAA9E12CE8E13C0017D570 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0EAA9EE2CE8E13C0017D570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0EAA9BD2CE8DE400017D570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0EAA9E02CE8E13C0017D570;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0EAA9F52CE8E13C0017D570 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0EAA9F02CE8E13C0017D570 /* Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E0EAA9C52CE8DE400017D570 /* Project-19-API(JavaScript).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-19-API(JavaScript).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EAA9E12CE8E13C0017D570 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EAA9E32CE8E13C0017D570 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +48,13 @@
 				Info.plist,
 			);
 			target = E0EAA9C42CE8DE400017D570 /* Project-19-API(JavaScript) */;
+		};
+		E0EAA9F42CE8E13C0017D570 /* Exceptions for "Extension" folder in "Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E0EAA9E02CE8E13C0017D570 /* Extension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,6 +67,14 @@
 			path = "Project-19-API(JavaScript)";
 			sourceTree = "<group>";
 		};
+		E0EAA9E52CE8E13C0017D570 /* Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E0EAA9F42CE8E13C0017D570 /* Exceptions for "Extension" folder in "Extension" target */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0EAA9DE2CE8E13C0017D570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EAA9E42CE8E13C0017D570 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				E0EAA9C72CE8DE400017D570 /* Project-19-API(JavaScript) */,
+				E0EAA9E52CE8E13C0017D570 /* Extension */,
+				E0EAA9E22CE8E13C0017D570 /* Frameworks */,
 				E0EAA9C62CE8DE400017D570 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				E0EAA9C52CE8DE400017D570 /* Project-19-API(JavaScript).app */,
+				E0EAA9E12CE8E13C0017D570 /* Extension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E0EAA9E22CE8E13C0017D570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0EAA9E32CE8E13C0017D570 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,10 +133,12 @@
 				E0EAA9C12CE8DE400017D570 /* Sources */,
 				E0EAA9C22CE8DE400017D570 /* Frameworks */,
 				E0EAA9C32CE8DE400017D570 /* Resources */,
+				E0EAA9F52CE8E13C0017D570 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E0EAA9EF2CE8E13C0017D570 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E0EAA9C72CE8DE400017D570 /* Project-19-API(JavaScript) */,
@@ -82,6 +149,28 @@
 			productName = "Project-19-API(JavaScript)";
 			productReference = E0EAA9C52CE8DE400017D570 /* Project-19-API(JavaScript).app */;
 			productType = "com.apple.product-type.application";
+		};
+		E0EAA9E02CE8E13C0017D570 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0EAA9F12CE8E13C0017D570 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				E0EAA9DD2CE8E13C0017D570 /* Sources */,
+				E0EAA9DE2CE8E13C0017D570 /* Frameworks */,
+				E0EAA9DF2CE8E13C0017D570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E0EAA9E52CE8E13C0017D570 /* Extension */,
+			);
+			name = Extension;
+			packageProductDependencies = (
+			);
+			productName = Extension;
+			productReference = E0EAA9E12CE8E13C0017D570 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +183,9 @@
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					E0EAA9C42CE8DE400017D570 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					E0EAA9E02CE8E13C0017D570 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -113,12 +205,20 @@
 			projectRoot = "";
 			targets = (
 				E0EAA9C42CE8DE400017D570 /* Project-19-API(JavaScript) */,
+				E0EAA9E02CE8E13C0017D570 /* Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E0EAA9C32CE8DE400017D570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EAA9DF2CE8E13C0017D570 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +235,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0EAA9DD2CE8E13C0017D570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0EAA9EF2CE8E13C0017D570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0EAA9E02CE8E13C0017D570 /* Extension */;
+			targetProxy = E0EAA9EE2CE8E13C0017D570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E0EAA9D92CE8DE410017D570 /* Debug */ = {
@@ -153,6 +268,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +297,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +430,56 @@
 			};
 			name = Release;
 		};
+		E0EAA9F22CE8E13C0017D570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9UP438A73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Serg.Project-19-API-JavaScript-.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0EAA9F32CE8E13C0017D570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S9UP438A73;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Serg.Project-19-API-JavaScript-.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +497,15 @@
 			buildConfigurations = (
 				E0EAA9D92CE8DE410017D570 /* Debug */,
 				E0EAA9DA2CE8DE410017D570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0EAA9F12CE8E13C0017D570 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0EAA9F22CE8E13C0017D570 /* Debug */,
+				E0EAA9F32CE8E13C0017D570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
